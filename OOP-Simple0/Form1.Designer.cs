@@ -172,7 +172,7 @@
             this.e.Name = "e";
             this.e.RowHeadersWidth = 51;
             this.e.RowTemplate.Height = 29;
-            this.e.Size = new System.Drawing.Size(293, 188);
+            this.e.Size = new System.Drawing.Size(307, 188);
             this.e.TabIndex = 3;
             // 
             // Name
