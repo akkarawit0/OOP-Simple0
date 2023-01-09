@@ -23,12 +23,12 @@ namespace OOP_Simple0
                 _Grade = double.Parse(textBox_Grade.Text),
                 _Major = textBox_Major.Text
             };
-            student.AddData(this.dataGridView1);
+            student.AddData(this.e);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            this.e.Rows.Clear();
         }
     }
 }

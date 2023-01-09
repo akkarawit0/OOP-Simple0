@@ -41,7 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.e = new System.Windows.Forms.DataGridView();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Student_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,7 @@
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Major = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -158,22 +158,22 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "สาขา";
             // 
-            // dataGridView1
+            // e
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.e.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.e.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
             this.Student_ID,
             this.Year,
             this.Hight,
             this.Grade,
             this.Major});
-            this.dataGridView1.Location = new System.Drawing.Point(441, 55);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(318, 188);
-            this.dataGridView1.TabIndex = 3;
+            this.e.Location = new System.Drawing.Point(441, 55);
+            this.e.Name = "e";
+            this.e.RowHeadersWidth = 51;
+            this.e.RowTemplate.Height = 29;
+            this.e.Size = new System.Drawing.Size(293, 188);
+            this.e.TabIndex = 3;
             // 
             // Name
             // 
@@ -233,7 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.e);
             this.Controls.Add(this.textBox_Major);
             this.Controls.Add(this.textBox_Grade);
             this.Controls.Add(this.textBox_Hight);
@@ -249,7 +249,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +270,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private DataGridView dataGridView1;
+        private DataGridView e;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Student_ID;
         private DataGridViewTextBoxColumn Year;
