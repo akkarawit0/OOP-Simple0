@@ -35,7 +35,6 @@
 
             all.Text = "นักเรียนทั้งหมด "+NameOfStudents.Count.ToString() + " คน";
             ee.Rows.Add(student._Name, student._ID, student._Yeay, student._Hight, student._Grade, student._Major);
-
         }
 
         private void button2_Click(object sender, EventArgs e)
