@@ -14,15 +14,5 @@ namespace OOP_Simple0
         public double _Hight;
         public double _Grade;
         public string _Major;
-
-        public void AddData(DataGridView gridView)
-        {
-            gridView.Rows.Add(_Name, _ID, _Yeay, _Hight, _Grade, _Major);
-        }
-
-        
-
-
-
     }
 }

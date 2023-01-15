@@ -41,7 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.e = new System.Windows.Forms.DataGridView();
+            this.ee = new System.Windows.Forms.DataGridView();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Student_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,10 @@
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Major = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.e)).BeginInit();
+            this.all = new System.Windows.Forms.TextBox();
+            this.min = new System.Windows.Forms.TextBox();
+            this.top = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ee)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -158,22 +161,22 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "สาขา";
             // 
-            // e
+            // ee
             // 
-            this.e.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.e.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
             this.Student_ID,
             this.Year,
             this.Hight,
             this.Grade,
             this.Major});
-            this.e.Location = new System.Drawing.Point(441, 55);
-            this.e.Name = "e";
-            this.e.RowHeadersWidth = 51;
-            this.e.RowTemplate.Height = 29;
-            this.e.Size = new System.Drawing.Size(328, 188);
-            this.e.TabIndex = 3;
+            this.ee.Location = new System.Drawing.Point(406, 55);
+            this.ee.Name = "ee";
+            this.ee.RowHeadersWidth = 51;
+            this.ee.RowTemplate.Height = 29;
+            this.ee.Size = new System.Drawing.Size(594, 188);
+            this.ee.TabIndex = 3;
             // 
             // Name
             // 
@@ -227,13 +230,37 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // all
+            // 
+            this.all.Location = new System.Drawing.Point(815, 263);
+            this.all.Name = "all";
+            this.all.Size = new System.Drawing.Size(185, 27);
+            this.all.TabIndex = 5;
+            // 
+            // min
+            // 
+            this.min.Location = new System.Drawing.Point(611, 263);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(185, 27);
+            this.min.TabIndex = 6;
+            // 
+            // top
+            // 
+            this.top.Location = new System.Drawing.Point(406, 263);
+            this.top.Name = "top";
+            this.top.Size = new System.Drawing.Size(185, 27);
+            this.top.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1050, 360);
+            this.Controls.Add(this.all);
+            this.Controls.Add(this.min);
+            this.Controls.Add(this.top);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.e);
+            this.Controls.Add(this.ee);
             this.Controls.Add(this.textBox_Major);
             this.Controls.Add(this.textBox_Grade);
             this.Controls.Add(this.textBox_Hight);
@@ -247,9 +274,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.e)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +296,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private DataGridView e;
+        private DataGridView ee;
         private DataGridViewTextBoxColumn Name;
         private DataGridViewTextBoxColumn Student_ID;
         private DataGridViewTextBoxColumn Year;
@@ -278,5 +304,8 @@
         private DataGridViewTextBoxColumn Grade;
         private DataGridViewTextBoxColumn Major;
         private Button button2;
+        private TextBox all;
+        private TextBox min;
+        private TextBox top;
     }
 }
